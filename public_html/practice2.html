@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <h1>EECS 348 Lab Seven Practice Two</h1>
+</head>
+
+
+
+<body>
+    <p id="para", style = "border-style: solid; border-width: 1px;">
+        Dummy text paragraph: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec convallis ipsum. Donec nec diam tellus. Nullam tempus, mauris ut malesuada fermentum, mi metus blandit l>
+    </p>
+    <script>
+        function change_color() {
+            var para = document.getElementById("para");
+            para.style.borderColor = `rgb(${document.getElementById("borderR").value},${document.getElementById("borderG").value},${document.getElementById("borderB").value})`;
+            para.style.borderWidth = document.getElementById("borderwidth").value;
+            para.style.backgroundColor = `rgb(${document.getElementById("backgroundR").value},${document.getElementById("backgroundG").value},${document.getElementById("backgroundB").value})`;
+        }
+    </script>
+
+
+    Border R(0-255): <input type="text" id="borderR">
+    <br>
+    Border G(0-255): <input type="text" id="borderG">
+    <br>
+    Border B(0-255): <input type="text" id="borderB">
+    <br>
+    Border Width: <input type="text" id="borderwidth">
+    <br>
+    Background R(0-255): <input type="text" id="backgroundR">
+    <br>
+    Background G(0-255): <input type="text" id="backgroundG">
+    <br>
+    Background B(0-255): <input type="text" id="backgroundB">
+    <br>
+    <button onclick="change_color()">Change the color!</button>
+</body>
+
+</html>

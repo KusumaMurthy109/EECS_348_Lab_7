@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <h1>EECS 348 Lab Seven Practice Three</h1>
+</head>
+
+<body>
+    <script>
+        function is_same() {
+            var first_password = document.getElementById('first_password').value;
+            var second_password = document.getElementById('second_password').value;
+
+            if(first_password.length < 8){
+                alert("The length of the first password is less than 8 letters!");
+            }
+            else if(second_password.length < 8){
+                alert("The length of the second password is less than 8 letters!");
+            }
+            else if(first_password != second_password){
+                alert("Two passwords don't match!");
+            }
+            else{
+                alert("Everything is good!")
+            }
+        }
+    </script>
+
+    First Password: <input type="text" id="first_password">
+    <br>
+    Scond Password: <input type="text" id="second_password">
+    <br>
+    <button onclick="is_same()">Validate Your Passwords</button>
+</body>
+
+</html>
+
