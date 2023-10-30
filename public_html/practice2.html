@@ -1,3 +1,12 @@
+<!--
+Author: Kusuma Murthy
+KUID: 3095756
+Date Created: 10/27/2023
+Lab: Lab 7
+Last modified: 10/29/2023
+Purpose: To create a page wich recives user input and chnages the boarder colors and paragpragh colors using html and js 
+-->
+
 <html>
 
 <head>
@@ -10,6 +19,7 @@
     <p id="para", style = "border-style: solid; border-width: 1px;">
         Dummy text paragraph: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec convallis ipsum. Donec nec diam tellus. Nullam tempus, mauris ut malesuada fermentum, mi metus blandit l>
     </p>
+    <!-- This is the java script code which deals with the changing color functionality of the paragraph-->
     <script>
         function change_color() {
             var para = document.getElementById("para");
@@ -19,7 +29,7 @@
         }
     </script>
 
-
+ <!--this code get recive the user input and sets it to the id's which are used in the js function coded above-->
     Border R(0-255): <input type="text" id="borderR">
     <br>
     Border G(0-255): <input type="text" id="borderG">

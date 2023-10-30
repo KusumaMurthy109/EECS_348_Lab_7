@@ -1,3 +1,11 @@
+<!--
+Author: Kusuma Murthy
+KUID: 3095756
+Date Created: 10/27/2023
+Lab: Lab 7
+Last modified: 10/29/2023
+Purpose: To create a page wich validates passwords, it uses html and javascript
+-->
 <html>
 
 <head>
@@ -5,6 +13,7 @@
 </head>
 
 <body>
+    <!-- This is the java script code which deals with validating the password-->
     <script>
         function is_same() {
             var first_password = document.getElementById('first_password').value;
@@ -24,7 +33,7 @@
             }
         }
     </script>    
-
+<!--this functions get recive the user input and sets it to the id's which are used in the js function coded above-->
     First Password: <input type="text" id="first_password">
     <br>
     Scond Password: <input type="text" id="second_password">

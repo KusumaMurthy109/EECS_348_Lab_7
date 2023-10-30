@@ -1,3 +1,12 @@
+<!--
+Author: Kusuma Murthy
+KUID: 3095756
+Date Created: 10/27/2023
+Lab: Lab 7
+Last modified: 10/29/2023
+Purpose: To create a page takes in user input and provides the user with a matrix table, this uses PHP
+-->
+
 <?php
     echo "Multiplication Table";
     $number = $_GET['number'];
